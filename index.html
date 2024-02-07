@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DES/ENCRIPTADOR | Challenge One</title>
+</head>
+<body>
+    <div class="principal">
+        <h1>DES/ENCRIPTADOR | <span>Challenge One</span></h1>
+        <main class="contenedor">
+            <div class="contenedor-inicial">
+                <div class="contenedor-tingresado">
+                    <textarea class="texto-ingresado" id="texto-ingresado" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="contenedor-advertencia">
+                        <img src="img/advertencia.svg" class="advertencia" alt="advertencia">
+                        <p class="texto-advertencia">Solo letras minúsculas</p>
+                    </div>
+                    <div class="contenedor-pcondicion" id="contenedor-pcondicion">
+                        <div class="contenedor-scondicion">
+                            <p class="texto-condicion" id="texto-condicion"></p>
+                            <button type="button" class="cerrar" id="cerrar"><img src="img/cerrar.svg" alt="cerrar"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <input type="button" class="boton" id="encriptar" value="Encriptar">
+                    <input type="button" class="boton" id="desencriptar" value="Desencriptar">
+                </div>
+            </div>
+            <div class="contenedor-final">
+                <div class="contenedor-tgenerado">
+                    <p class="texto-generado" id="texto-generado"></p>
+                    <div class="contenedor-espera" id="contenedor-espera">
+                        <img src="img/espera.svg" class="espera" alt="espera">
+                        <p class="texto-espera">Ningún mensaje fue encontrado</p>
+                    </div>
+                </div>
+                <input type="button" class="boton bexterno" id="copiar" value="Copiar">
+            </div>
+        </main>
+        <footer class="desarrollado">
+            <hr>
+            <p>&copy; Gianella ABA - 2024</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
