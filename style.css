@@ -140,25 +140,29 @@ span{
     flex-grow: 1;
     position: relative;
 }
-.texto-ingresado,.contenedor-tgenerado{
-    padding: 30px 40px;
+.texto-ingresado,.texto-generado{
+    padding: 30px 32px 30px 40px;
     border-radius: 8px;
     background: #292B36;
     box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.50) inset;
-    /* overflow: scroll; */
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #1b1d26;
+    border-radius: 8px;
 }
 .texto-ingresado,.texto-generado,.texto-condicion{
     font-size: 20px;
     font-weight: 400;
     color: #FFF;
 }
-.texto-ingresado{
-    height: 100%;
-    width: 100%;
-    resize: none;
-    border: none;
-}
-.texto-ingresado:focus{
+.texto-generado:focus,.texto-ingresado:focus{
     outline: none;
 }
 .contenedor-advertencia{
@@ -322,8 +326,8 @@ span{
     .texto-ingresado,.texto-generado,.boton{
         font-size: 16px;
     }
-    .texto-ingresado,.contenedor-tgenerado{
-        padding: 20px 25px;
+    .texto-ingresado,.texto-generado{
+        padding: 20px 17px 20px 25px;
     }
     .texto-advertencia,.desarrollado>p{
         font-size: 12px;

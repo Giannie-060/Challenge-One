@@ -44,7 +44,7 @@ function condiciones(cadenaTexto) {
 
 function desencriptadorEncriptador(accion) {
     var textoIngresado = document.getElementById('texto-ingresado').value;
-    var textoGenerado = document.getElementById('texto-generado').value = '';
+    var textoGenerado = document.getElementById('texto-generado');
 
     if (textoIngresado.length > 0) {
         if (condiciones(textoIngresado)) {
