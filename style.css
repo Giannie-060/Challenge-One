@@ -220,28 +220,36 @@ span{
 .bexterno{
     margin: 20px auto 0;
 }
-.desarrollado{
+.contenedor-desarrollador{
     position: relative;
     color: #FFF;
-    font-size: 16px;
-    text-align: center;
     padding: 15px 0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.desarrollado>hr{
+.contenedor-desarrollador>hr{
     height: 2px;
     background-color: #FFF;
     margin-top: 5px;
     border: none;
 }
-.desarrollado>p{
+.desarrollador{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
     background-color: #4F438C;
     padding: 0 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    font-size: 16px;
+    text-align: center;
+}
+.icono-github{
+    width: 22px;
+    height: 22px;
 }
 .contenedor-pcondicion{
     display: none;
@@ -329,7 +337,7 @@ span{
     .texto-ingresado,.texto-generado{
         padding: 20px 17px 20px 25px;
     }
-    .texto-advertencia,.desarrollado>p{
+    .texto-advertencia,.desarrollador{
         font-size: 12px;
     }
     .advertencia{
@@ -362,8 +370,10 @@ span{
     .contenedor-scondicion{
         width: 80%;
     }
-    .desarrollado>p{
-        width: 190px;
+    .desarrollador{
+        padding: 0 10px;
+        width: 205px;
+        gap: 0;
     }
     .boton:hover,.boton:focus {
         color: #FFF500;
