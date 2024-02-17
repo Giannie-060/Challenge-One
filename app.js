@@ -52,7 +52,7 @@ function desencriptadorEncriptador(accion) {
                 var textoGenerado = textoIngresado.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
             }
             else {
-                var textoGenerado = textoIngresado.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
+                var textoGenerado = textoIngresado.replace(/ai/g, 'a').replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
             }
             document.getElementById('texto-generado').textContent = textoGenerado;
             if (textoGenerado.length > 0) {
