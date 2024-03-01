@@ -2,6 +2,13 @@ const encriptar = document.getElementById('encriptar');
 const desencriptar = document.getElementById('desencriptar');
 const copiar = document.getElementById('copiar');
 
+let matriz=[['e','enter'],
+            ['i','imes'],
+            ['a','ai'],
+            ['o','ober'],
+            ['u','ufat']
+        ];
+
 function quitarContenedorEspera() {
     const contenedorEspera = document.getElementById('contenedor-espera');
     if (contenedorEspera !== null) {
@@ -49,10 +56,20 @@ function desencriptadorEncriptador(accion) {
     if (textoIngresado.length > 0) {
         if (condiciones(textoIngresado)) {
             if (accion === 'cifrado') {
-                var textoGenerado = textoIngresado.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
+                for (let i = 0; i < matriz.length; i++) {
+                    if (textoIngresado.includes(matriz[i][0])) {
+                        textoIngresado=textoIngresado.replaceAll(matriz[i][0],matriz[i][1]);
+                    }
+                }
+                textoGenerado=textoIngresado;
             }
-            else {
-                var textoGenerado = textoIngresado.replace(/ai/g, 'a').replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
+            else if(accion === 'descifrado'){
+                for (let i = matriz.length-1; i >= 0; i--) {
+                    if (textoIngresado.includes(matriz[i][1])) {
+                        textoIngresado=textoIngresado.replaceAll(matriz[i][1],matriz[i][0]);
+                    }
+                }
+                textoGenerado=textoIngresado;
             }
             document.getElementById('texto-generado').textContent = textoGenerado;
             if (textoGenerado.length > 0) {
