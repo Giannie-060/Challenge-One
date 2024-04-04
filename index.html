@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>DES/ENCRIPTADOR | Challenge One</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="principal">
-        <h1>DES/ENCRIPTADOR | <span>Challenge One</span></h1>
-        <main class="contenedor">
-            <div class="contenedor-inicial">
-                <div class="contenedor-tingresado">
-                    <textarea class="texto-ingresado" id="texto-ingresado" placeholder="Ingrese el texto aquí"></textarea>
-                    <div class="contenedor-advertencia">
-                        <img src="img/advertencia.svg" class="advertencia" alt="advertencia">
-                        <p class="texto-advertencia">Solo letras minúsculas</p>
-                    </div>
-                    <div class="contenedor-pcondicion" id="contenedor-pcondicion">
-                        <div class="contenedor-scondicion">
-                            <p class="texto-condicion" id="texto-condicion"></p>
-                            <button type="button" class="cerrar" id="cerrar"><img src="img/cerrar.svg" alt="cerrar"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="botones">
-                    <input type="button" class="boton" id="encriptar" value="Encriptar">
-                    <input type="button" class="boton" id="desencriptar" value="Desencriptar">
-                </div>
+      <h1>DES/ENCRIPTADOR | <span>Challenge One</span></h1>
+      <main class="contenedor">
+        <div class="contenedor-inicial">
+          <div class="contenedor-tingresado">
+            <textarea
+              class="texto-ingresado"
+              id="texto-ingresado"
+              placeholder="Ingrese el texto aquí"
+            ></textarea>
+            <div class="contenedor-advertencia">
+              <img
+                src="img/advertencia.svg"
+                class="advertencia"
+                alt="advertencia"
+              />
+              <p class="texto-advertencia">Solo letras minúsculas</p>
             </div>
-            <div class="contenedor-final">
-                <div class="contenedor-tgenerado">
-                    <textarea class="texto-generado" id="texto-generado"></textarea>
-                    <div class="contenedor-espera" id="contenedor-espera">
-                        <img src="img/espera.svg" class="espera" alt="espera">
-                        <p class="texto-espera">Ningún mensaje fue encontrado</p>
-                    </div>
-                </div>
-                <input type="button" class="boton bexterno" id="copiar" value="Copiar">
+            <div class="contenedor-pcondicion" id="contenedor-pcondicion">
+              <div class="contenedor-scondicion">
+                <p class="texto-condicion" id="texto-condicion"></p>
+                <button type="button" class="cerrar" id="cerrar">
+                  <img src="img/cerrar.svg" alt="cerrar" />
+                </button>
+              </div>
             </div>
-        </main>
-        <footer class="contenedor-desarrollador">
-            <hr>
-            <div class="desarrollador">
-                <p>&copy; Gianella Annie - 2024</p>
-                <a href="https://github.com/Giannie-060/" class="contenedor-icono">
-                    <img src="img/github.svg" alt="github" class="icono-github">
-                </a>
+          </div>
+          <div class="botones">
+            <input
+              type="button"
+              class="boton"
+              id="encriptar"
+              value="Encriptar"
+            />
+            <input
+              type="button"
+              class="boton"
+              id="desencriptar"
+              value="Desencriptar"
+            />
+          </div>
+        </div>
+        <div class="contenedor-final">
+          <div class="contenedor-tgenerado">
+            <textarea class="texto-generado" id="texto-generado"></textarea>
+            <div class="contenedor-espera" id="contenedor-espera">
+              <img src="img/espera.png" class="espera" alt="espera" />
+              <p class="texto-espera">Ningún mensaje fue encontrado</p>
             </div>
-        </footer>
+          </div>
+          <input
+            type="button"
+            class="boton bexterno"
+            id="copiar"
+            value="Copiar"
+          />
+        </div>
+      </main>
+      <footer class="contenedor-desarrollador">
+        <hr />
+        <div class="desarrollador">
+          <p>&copy; 2024 Gianella Annie</p>
+          <a href="https://github.com/gianellannie/">
+            <img src="img/github.svg" alt="github" class="icono" />
+          </a>
+          <a href="https://www.linkedin.com/in/gianellannie/">
+            <img src="img/linkedin.svg" alt="linkedin" class="icono" />
+          </a>
+        </div>
+      </footer>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
