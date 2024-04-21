@@ -50,7 +50,7 @@ function condiciones(cadenaTexto) {
   }
 }
 
-function desencriptadorEncriptador(accion) {
+function accion(accion) {
   var textoIngresado = document.getElementById('texto-ingresado').value;
   var textoGenerado = document.getElementById('texto-generado');
 
@@ -86,10 +86,8 @@ function desencriptadorEncriptador(accion) {
   return;
 }
 
-encriptar.addEventListener('click', () => desencriptadorEncriptador('cifrado'));
-desencriptar.addEventListener('click', () =>
-  desencriptadorEncriptador('descifrado')
-);
+encriptar.addEventListener('click', () => accion('cifrado'));
+desencriptar.addEventListener('click', () => accion('descifrado'));
 copiar.addEventListener('click', () => {
   recuperarContenedorEspera();
   var sustituto = document.createElement('input');
